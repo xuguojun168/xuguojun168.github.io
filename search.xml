@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hexo博客中插入图片的坑</title>
+    <url>/2020/01/28/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E5%9D%91/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>Hexo博客，我很喜欢，所以才研究，所以才发现坑。</p>
+</blockquote>
+<h2 id="相同点"><a href="#相同点" class="headerlink" title="相同点"></a>相同点</h2><h3 id="设置站点配置文件"><a href="#设置站点配置文件" class="headerlink" title="设置站点配置文件"></a>设置站点配置文件</h3><p>位于：比如本机：位于的目录：/home/xgj/hexo/xuguojun168.github.io目录下<br>_config.yml:将post_asset_folder: false改为post_asset_folder: true</p>
+<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>打开终端：进入自己的博客文件夹<br>比如：xgj@xgj-PC:~/hexo/xuguojun168.github.io$<br>输入：<br>npm install <a href="https://github.com/CodeFalling/hexo-asset-image" target="_blank" rel="noopener">https://github.com/CodeFalling/hexo-asset-image</a> – save</p>
+<h3 id="新建文件md和文件夹："><a href="#新建文件md和文件夹：" class="headerlink" title="新建文件md和文件夹："></a>新建文件md和文件夹：</h3><p>方法有2种<br>方法一：<br>运行hexo n “XXXXXX”,生成XXXXX.md博文时就会在/source/_posts目录下生成XXXXXX的文件夹，将你想在XXXXX博文中插入的照片放置到这个同名文件夹中即可，图片的命名随意。<br>方法二：<br>手动新建，适合windows，本机是deepin-linux也是可以图形界面新建，很方便。</p>
+<h2 id="不同点"><a href="#不同点" class="headerlink" title="不同点"></a>不同点</h2><p>添加图片:在想添加的位置写入：</p>
+<h2 id="文章中插入图片"><a href="#文章中插入图片" class="headerlink" title="文章中插入图片"></a>文章中插入图片</h2><p>添加图片:在想添加的位置写入</p>
+<p>图1<br><img src="/2020/01/28/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E5%9D%91/1.png" alt="文章中的插入目录"></p>
+<h2 id="我曾掉坑里过"><a href="#我曾掉坑里过" class="headerlink" title="我曾掉坑里过"></a>我曾掉坑里过</h2><h2 id="about中插入图片"><a href="#about中插入图片" class="headerlink" title="about中插入图片"></a>about中插入图片</h2><p>需要加index文件夹/，即（index/图片名字.格式）<br>图2<br><img src="/2020/01/28/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E7%9A%84%E5%9D%91/2.png" alt="about中的插入目录"><br>注意格式：没有同名文件夹/，再加（图片名字.格式）</p>
+<h2 id="我又掉坑了"><a href="#我又掉坑了" class="headerlink" title="我又掉坑了"></a>我又掉坑了</h2><p>刚才写文章是举例<br>如果没加### 就会出现很多加载图片的。坑啊！！哈哈哈</p>
+]]></content>
+      <categories>
+        <category>实用技术</category>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>个人博客</tag>
+        <tag>实用</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo-menu博客的坑</title>
+    <url>/2020/01/28/hexo-menu%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9D%91/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>Hexo做博客不错，今天讲它的menu制作的坑。</p>
+</blockquote>
+<p>图1<br><img src="/2020/01/28/hexo-menu%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9D%91/1.png" alt="左侧菜单"> </p>
+<h2 id="首先在自己的根目录下，终端"><a href="#首先在自己的根目录下，终端" class="headerlink" title="首先在自己的根目录下，终端"></a>首先在自己的根目录下，终端</h2><p>比如：本机<br>xgj@xgj-PC:~/hexo/xuguojun168.github.io$ </p>
+<h2 id="比如：新建tags"><a href="#比如：新建tags" class="headerlink" title="比如：新建tags"></a>比如：新建tags</h2><p>输入：<br>hexo n page tags  #n=new</p>
+<p>当然还可依次，新建about、categories、archives等</p>
+<h2 id="坑1-配置文件容易混淆：主题配置文件-config-yml"><a href="#坑1-配置文件容易混淆：主题配置文件-config-yml" class="headerlink" title="[坑1] 配置文件容易混淆：主题配置文件_config.yml"></a>[坑1] 配置文件容易混淆：主题配置文件_config.yml</h2><p>在blog/themes/next/_config.yml文件，<br>本机：/home/xgj/hexo/xuguojun168.github.io/themes/next目录下，这个很容易搞错。<br>这个坑很大，因为有2个配置文件，建议修改前备份一个。后面单独讲。<br>搜索Menu Settings，代码修改如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line">  <span class="comment">#schedule: /schedule/ || calendar</span></span><br><span class="line">  <span class="comment">#sitemap: /sitemap.xml || sitemap</span></span><br><span class="line">  <span class="comment">#commonweal: /404/ || heartbeat</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="引申说明："><a href="#引申说明：" class="headerlink" title="引申说明："></a>引申说明：</h2><p>注意menu_icons:enable：true一定要。<br>但是后面的可要可不要。加上去是一种说明。<br>代码：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">menu_icons:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span> <span class="comment">#这里出现相关符号，以免打不开相关界面</span></span><br><span class="line">  home: home</span><br><span class="line">  about: user</span><br><span class="line">  categories: th</span><br><span class="line">  tags: tags</span><br><span class="line">  archives: archive</span><br><span class="line">  commonweal: heartbeat</span><br></pre></td></tr></table></figure>
+
+<h2 id="坑2-menu下的设置"><a href="#坑2-menu下的设置" class="headerlink" title="[坑2] menu下的设置"></a>[坑2] menu下的设置</h2><p>我要是按照上面的代码，就是报错。<br>简单的说一下，喜欢的就把前面的#（注释）去掉，不是坑，home不需要hexo n page xx。<br>比如：about: /about/ || user<br>我改成这样：about: /about||user  #注意冒号后面有加空格，其他不能有。坑2。</p>
+<h2 id="坑3-md文件的修改"><a href="#坑3-md文件的修改" class="headerlink" title="[坑3] md文件的修改"></a>[坑3] md文件的修改</h2><p>当在终端执行：<br>xgj@xgj-PC:~/hexo/xuguojun168.github.io$<br>输入：hexo n page about<br>会生成文件，在目录下<br>本机是：/home/xgj/hexo/xuguojun168.github.io/source<br>一般是自己blog/source目录下<br>一个是index文件夹，一个是index.md文件。</p>
+<p>注意：<br>1）如果有，应该及时删除，从新来一遍，否则没有初始化就会报错。<br>2）打开index.md文件，注意修改成，如下：</p>
+<hr>
+<p>title: about<br>date: 2020-01-28 12:44:32<br>type: about<br>layout: about #没有引号<br>index: true  #这个不能少，否则打不开</p>
+<hr>
+<p>仔细看，没有引号，同时出现index: true  #这个不能少，否则打不开，这个坑，害的我琢磨半天，你别掉下去。</p>
+<h2 id="学习一下hexo的配置文件：-config-yml"><a href="#学习一下hexo的配置文件：-config-yml" class="headerlink" title="学习一下hexo的配置文件：_config.yml"></a>学习一下hexo的配置文件：_config.yml</h2><p>本机举例，建议修改之前备份一下</p>
+<h3 id="站点配置文件"><a href="#站点配置文件" class="headerlink" title="站点配置文件"></a>站点配置文件</h3><p>_config.yml<br>位于的目录：/home/xgj/hexo/xuguojun168.github.io目录下<br>图2<br><img src="/2020/01/28/hexo-menu%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9D%91/2.png" alt="站点配置文件"> </p>
+<h3 id="主题配置文件"><a href="#主题配置文件" class="headerlink" title="主题配置文件"></a>主题配置文件</h3><p>_config.yml<br>位于的目录：/home/xgj/hexo/xuguojun168.github.io/themes/next目录下<br>本hexo的主题（themes）是next，所以在next下<br>图3<br><img src="/2020/01/28/hexo-menu%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%9D%91/3.png" alt="主题配置文件"> </p>
+<h2 id="别忘了提交看看"><a href="#别忘了提交看看" class="headerlink" title="别忘了提交看看"></a>别忘了提交看看</h2><p>xgj@xgj-PC:~/hexo/xuguojun168.github.io$ </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>看看效果。</p>
+<p>搞定！！</p>
+]]></content>
+      <categories>
+        <category>实用技术</category>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>实用技术</tag>
+        <tag>个人博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>node-hexo-github搭建博客</title>
+    <url>/2020/01/27/node-hexo-github-blog/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>我曾经不知怎么安装了一个版本node是14，最新版的，官网上竟然没有，导致npm不能使用。所以，我这次卸载后重新安装。</p>
+</blockquote>
+<h2 id="1-官网"><a href="#1-官网" class="headerlink" title="1.官网"></a>1.官网</h2><p>.<a href="https://nodejs.org/en/download/current/" target="_blank" rel="noopener">https://nodejs.org/en/download/current/</a><br>官网的安装方法，deepin-linux的本机竟然不行<br>那我只好换了一种方法</p>
+<h2 id="2-linux的第三方软件一般安装在-usr-local目录下"><a href="#2-linux的第三方软件一般安装在-usr-local目录下" class="headerlink" title="2.linux的第三方软件一般安装在/usr/local目录下"></a>2.linux的第三方软件一般安装在/usr/local目录下</h2><h2 id="3-打开在终端root下"><a href="#3-打开在终端root下" class="headerlink" title="3.打开在终端root下"></a>3.打开在终端root下</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /usr/<span class="built_in">local</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-输入："><a href="#4-输入：" class="headerlink" title="4.输入："></a>4.输入：</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo wget http://nodejs.org/dist/v13.7.0/node-v13.7.0.tar.gz</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-解压-注意官网给的是"><a href="#5-解压-注意官网给的是" class="headerlink" title="5.解压#注意官网给的是"></a>5.解压#注意官网给的是</h2><p>#sudo tar -xJvf   #tar.xz,压缩文件的后缀不一样</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo tar -xzvf node-v13.7.0.tar.gz</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-进入文件夹"><a href="#6-进入文件夹" class="headerlink" title="6.进入文件夹"></a>6.进入文件夹</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> node-v13.7.0</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-编译和安装："><a href="#7-编译和安装：" class="headerlink" title="7.编译和安装："></a>7.编译和安装：</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$./configure</span><br><span class="line">$ make   <span class="comment">#这个过程很慢</span></span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-查看版本"><a href="#8-查看版本" class="headerlink" title="8.查看版本"></a>8.查看版本</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ node -v</span><br></pre></td></tr></table></figure>
+
+<p>(base) root@xgj-PC:/usr/local/node-v13.7.0# node -v<br>v13.7.0</p>
+<p>注意：自带安装npm<br>npm -v  #查看版本<br>(base) root@xgj-PC:/usr/local/node-v13.7.0# npm -v<br>6.13.6</p>
+<p>xgj@xgj-PC:~$ npm -v<br>6.13.6</p>
+<h2 id="9-安装hexo"><a href="#9-安装hexo" class="headerlink" title="9.安装hexo"></a>9.安装hexo</h2><p>在root下的根目录<br>(base) root@xgj-PC:~# npm install hexo-cli -g</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>#自动创建软连接：#可省略，有点机器需要</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ln -s /usr/<span class="built_in">local</span>/lib/node_modules/hexo-cli/bin/hexo /usr/<span class="built_in">local</span>/bin/hexo</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-在根目录下"><a href="#10-在根目录下" class="headerlink" title="10.在根目录下"></a>10.在根目录下</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ mkdir hexo</span><br><span class="line">$ <span class="built_in">cd</span> hexo    </span><br><span class="line">$ hexo init   <span class="comment">#会自动把资源文件下载好</span></span><br></pre></td></tr></table></figure>
+
+<p>如<br>xgj@xgj-PC:<del>$ mkdir hexo<br>xgj@xgj-PC:</del>$ cd hexo<br>xgj@xgj-PC:~/hexo$ hexo init</p>
+<h2 id="11-访接下来就是将本地的静态博客部署到gitHub上，要把本地的静态博客同步到-Github，"><a href="#11-访接下来就是将本地的静态博客部署到gitHub上，要把本地的静态博客同步到-Github，" class="headerlink" title="11.访接下来就是将本地的静态博客部署到gitHub上，要把本地的静态博客同步到 Github，"></a>11.访接下来就是将本地的静态博客部署到gitHub上，要把本地的静态博客同步到 Github，</h2><p>我们还需要先安装两个跟部署相关的 hexo 插件，可以实现如下命令：<br>在cd hexo下</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo -server --save</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h2 id="12"><a href="#12" class="headerlink" title="12."></a>12.</h2><p>hexo init 你的用户名.github.io  // 建议和创建仓库时使用同一个<br>我是：</p>
+<p>hexo init xuguojun168.github.io  // 建议和创建仓库时使用同一个</p>
+<p>”说明：“在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml<br>。 其中，一份位于站点根目录下（即 xxx.github.io 目录下），主要包含 Hexo 本身的配置；<br>另一份位于主题目录下，这份配置有主题作者提供，主要用于配置主题相关的选项。<br>为了描述方便，在以下说明中，将前者称为 “站点配置文件”， 后者称为 “主题配置文件”。</p>
+<h2 id="13-注意自己必须先在github上注册，建一个仓库"><a href="#13-注意自己必须先在github上注册，建一个仓库" class="headerlink" title="13.注意自己必须先在github上注册，建一个仓库"></a>13.注意自己必须先在github上注册，建一个仓库</h2><p>当然还需要ssh和git同步<br>然后才可以发布到 GitHubPages<br>确认在本地上显示无误之后，就可以将 md 转为 静态网页文件，然后发布到 GitHubPages 上去了。<br>方法：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean <span class="comment">#清除缓存 网页正常情况下可以忽略此条命令</span></span><br><span class="line">$ hexo g <span class="comment">#生成静态网页</span></span><br><span class="line">$ hexo d <span class="comment">#开始部署</span></span><br></pre></td></tr></table></figure>
+
+
+<p>#要输入github的<br>账号和密码<br>xxxxxx<br>xxxxxx</p>
+<h2 id="14-在浏览器中打开，成功！！"><a href="#14-在浏览器中打开，成功！！" class="headerlink" title="14.在浏览器中打开，成功！！"></a>14.在浏览器中打开，成功！！</h2><p><a href="https://xuguojun168.github.io/">https://xuguojun168.github.io/</a></p>
+]]></content>
+      <categories>
+        <category>实用技术</category>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>个人博客</tag>
+        <tag>实用</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World（主题自带博文）</title>
+    <url>/2020/01/27/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
